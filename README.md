@@ -21,7 +21,7 @@ Last Save this folder in your desired go-lang directory.
 
 But you can only use method number 2 for development
 ```
-### next ?
+### Next ?
 ```
 1. Go-Lang Unit Test
 2. Go-Lang Modules
