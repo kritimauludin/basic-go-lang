@@ -1,3 +1,13 @@
+/**
+Tipe data Slice adalah potongan dari data Array
+Slice mirip dengan Array, yang membedakan adalah ukuran Slice bisa berubah
+Slide dan Array selalu terkoneksi, dimana Slice adalah data yang mengakses sebagian atau seluruhdata di Array
+
+Tipe Data Slice memiliki 3 data, yaitu pointer, length dan capacity
+Pointer adalah penunjuk data pertama di array para slice
+Length adalah panjang dari slice, dan
+Capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
+*/
 package main
 
 import "fmt"
