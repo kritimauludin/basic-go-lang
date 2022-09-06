@@ -11,6 +11,7 @@ import "fmt"
 
 func main() {
 
+	//buat map
 	person := map[string]string{
 		"name":    "kriti",
 		"address": "bogor",
@@ -23,6 +24,7 @@ func main() {
 	person["jobs"] = "mahasiswa"
 	fmt.Println(person)
 
+	//membuat map baru
 	var book map[string]string = make(map[string]string)
 	book["title"] = "Belajar Go"
 	book["author"] = "Kang Eko"
@@ -30,6 +32,7 @@ func main() {
 	fmt.Println(book)
 	fmt.Println(len(book))
 
+	//dlete value map with key
 	delete(book, "wrong")
 
 	fmt.Println(book)
