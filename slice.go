@@ -1,4 +1,5 @@
-/**
+/*
+*
 Tipe data Slice adalah potongan dari data Array
 Slice mirip dengan Array, yang membedakan adalah ukuran Slice bisa berubah
 Slide dan Array selalu terkoneksi, dimana Slice adalah data yang mengakses sebagian atau seluruhdata di Array
@@ -47,7 +48,7 @@ func main() {
 
 	var slice3 = append(slice2, "bulan baru")
 	fmt.Println(slice3)
-	
+
 	slice3[1] = "Bukan desember"
 	fmt.Println(slice3)
 
@@ -58,17 +59,22 @@ func main() {
 	newSlice := make([]string, 2, 4)
 	newSlice[0] = "kriti"
 	newSlice[1] = "mauludin"
-
+	// newSlice[2] = "nama"  erorr harusnya menggunakan append
 	fmt.Println(newSlice)
 
+	newSlice2 := append(newSlice, "namaku")
+	fmt.Println(newSlice2)
+
 	//copy slice (make sure length and capacity same, so that the data is not truncate)
-	copySlice := make([]string, len(newSlice), cap(newSlice))
-	copy(copySlice, newSlice)
-	fmt.Println(copySlice)
+	fromSlice := months[:]
+	toSlice := make([]string, len(fromSlice), cap(fromSlice))
+	copy(toSlice, fromSlice)
+	fmt.Println(fromSlice)
+	fmt.Println(toSlice)
 
 	// code aray vs slice
-	iniArray:= [5]int{1,2,3,4,5}
-	iniSlice := []int{1,2,3,4,5}
+	iniArray := [5]int{1, 2, 3, 4, 5}
+	iniSlice := []int{1, 2, 3, 4, 5}
 
 	fmt.Println(iniArray)
 	fmt.Println(iniSlice)

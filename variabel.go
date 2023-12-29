@@ -21,12 +21,12 @@ func main() {
 	name = "kriti"
 	fmt.Println(name)
 
-	var(
+	var (
 		firstName = "kriti"
-		lastName = "mauludin"
+		lastName  = "mauludin"
 	)
 
 	fmt.Println(firstName)
 	fmt.Println(lastName)
-		
+
 }

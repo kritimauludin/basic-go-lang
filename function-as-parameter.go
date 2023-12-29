@@ -8,8 +8,7 @@ import "fmt"
 // 	fmt.Println("hello ", nameFiltered)
 // }
 
-//with type declaration jika penyebutan function akan sangat panjang
-
+// with type declaration jika penyebutan function akan sangat panjang
 type Filter func(string) string
 
 func sayHelloWithFilter(name string, filter Filter) {
@@ -18,7 +17,7 @@ func sayHelloWithFilter(name string, filter Filter) {
 	fmt.Println("hello ", nameFiltered)
 }
 
-func spamFilter(name string) string{
+func spamFilter(name string) string {
 	if name == "anjing" {
 		return "..."
 	} else {
@@ -26,7 +25,7 @@ func spamFilter(name string) string{
 	}
 }
 
-func main(){
+func main() {
 	sayHelloWithFilter("kriti", spamFilter)
 
 	filter := spamFilter

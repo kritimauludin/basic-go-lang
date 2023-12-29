@@ -7,15 +7,14 @@ func endApp() {
 	//recover berfungsi menangkap data panic agar aplikasi tidak dihentikan
 	//pastikan recover dieksekusi diakhir maka kita bisa simpan di defer
 	//dalam artian recover yg benar disimpan didefer
-	message := recover()
+	message := recover() //cara yg bener recover disimpan di function defeer
 	if message != nil {
 		fmt.Println("Error with message: ", message)
 	}
-	
 
 }
 
-func runApp(error bool)  {
+func runApp(error bool) {
 	defer endApp()
 	if error {
 
@@ -28,6 +27,6 @@ func runApp(error bool)  {
 	fmt.Println("Running App")
 }
 
-func main()  {
+func main() {
 	runApp(false)
 }

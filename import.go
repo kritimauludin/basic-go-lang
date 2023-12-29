@@ -1,8 +1,8 @@
 package main
 
 import (
+	"basic-go-lang/helper"
 	"fmt"
-	"go-dasar/helper"
 )
 
 func main() {

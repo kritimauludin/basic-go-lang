@@ -24,6 +24,12 @@ func main() {
 	fmt.Println(len(names))
 	fmt.Println(len(values))
 
-	var again [10]int
+	var again = [...]int{ //ketika ingin declare seperti ini, harus lgsg diisi
+		90,
+		70,
+		80,
+		98,
+		0,
+	}
 	fmt.Println(len(again))
 }

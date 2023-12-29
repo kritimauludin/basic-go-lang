@@ -8,17 +8,19 @@ import "fmt"
 //scope yg ada diatas bisa diakses dibawah
 //tetapi scope yang ada dibawah tidak bisa diakses diatasnya
 
-func main(){
+//clousure merupakan kemampuan suatu function mengakses data data disekitarnya
+
+func main() {
 	counter := 0
 	name := "km"
 
-	increment := func ()  {
+	increment := func() {
 		fmt.Println("increment")
 		counter++
 
 		//jika tidak ingin merubah variabel diatasnya
 		//diperlukan pendeklarasian ulang
-		name:= "kriti"
+		name := "kriti"
 		fmt.Println(name)
 	}
 

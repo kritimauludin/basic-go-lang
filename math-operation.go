@@ -6,14 +6,14 @@ func main() {
 	var result = 10 + 5
 	fmt.Println(result)
 
-	var a= 10
+	var a = 10
 	var b = 10
 	result = a + b
 	fmt.Println(result)
 
-	// augmenter asigment
+	// augmented asigment
 	var i = 10
-	i+=1
+	i += 1
 	fmt.Println(i)
 
 	// unary operator

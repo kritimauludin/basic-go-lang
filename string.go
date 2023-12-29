@@ -4,10 +4,9 @@ import "fmt"
 
 func main() {
 	fmt.Println("kriti")
-	//akan dalam bentu byte
-	fmt.Println("kriti mauludin"[2])
-	fmt.Println(len("kriti"))
 
-	// hitung jumlah karakter
+	fmt.Println("kriti mauludin"[2]) //akan dalam bentu byte
+
+	fmt.Println(len("kriti")) //hitung jumlah karakter
 
 }
